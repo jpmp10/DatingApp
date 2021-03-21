@@ -39,6 +39,7 @@ export class AccountService {
     );
   }
   setCurrentUser(user: User) {
+    console.log("currentUser:" + JSON.stringify(this.currentUserSource));
     this.currentUserSource.next(user);
   }
 
